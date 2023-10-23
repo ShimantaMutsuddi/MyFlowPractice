@@ -122,12 +122,12 @@ class MainActivity : AppCompatActivity() {
                 delay(7000)
 
 
-               // Log.d(TAG, "onCreate: ${result.value} ")
+                Log.d(TAG, "onCreate: ${result.value} ")
 
-              result.collect {
+                    /*result.collect {
 
                         Log.d(TAG, "item - $it")
-                    }
+                    }*/
             }catch (e: Exception){
                 Log.d(TAG, "onCreate: ${e.message} ")
             }
@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-   /* private fun producer() :  StateFlow<Int> {
+    private fun producer() :  StateFlow<Int> {
 
         val mutableStateFlow = MutableStateFlow(10)
 
@@ -154,9 +154,9 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    }*/
+    }
 
-   private fun producer() :  Flow<Int> {
+/*    private fun producer() :  Flow<Int> {
 
         val mutableSharedFlow= MutableSharedFlow<Int>(  )
 
@@ -172,7 +172,7 @@ class MainActivity : AppCompatActivity() {
         return mutableSharedFlow
 
 
-    }
+    }*/
 
 
 
